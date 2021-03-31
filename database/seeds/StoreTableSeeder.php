@@ -13,7 +13,11 @@ class StoreTableSeeder extends Seeder
      */
     public function run()
     {
+        factory(Store::class, 40)->create();
+
         $stores = Store::all();
+
+
 
         foreach($stores as $store)
         {

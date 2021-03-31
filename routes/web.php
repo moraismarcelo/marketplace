@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/admin/stores', 'Admin\StoreController@index')->name('admin.store.index');
+Route::get('/admin/stores/create', 'Admin\StoreController@create')->name('admin.store.create');
+Route::post('/admin/stores/store', 'Admin\StoreController@store')->name('admin.store.store');
